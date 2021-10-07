@@ -24,7 +24,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/DevTurgay/2kgroup-task1.git
    ```
 2. Just move the files your root ^_^
 
