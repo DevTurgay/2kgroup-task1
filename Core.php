@@ -6,13 +6,15 @@ class Core
 	public $headerData;
 	public $footerData;
 
-	function __construct() {
+	function __construct()
+	{
 		$this->headerData = [
 			'title'=>'Xml parser task'
 		];
 	}
 
-	protected function render(string $file = '', array $data = null, bool $header = true, bool $footer = true): void {
+	protected function render(string $file = '', array $data = null, bool $header = true, bool $footer = true): void
+	{
 		
 		$filePath = $this->validateFile($file,'/views/');
 
@@ -26,7 +28,8 @@ class Core
 	}
 
 	// If validation succeeds the method returns its includable path
-	private function validateFile(string $file = '', string $path) {
+	private function validateFile(string $file = '', string $path)
+	{
 		if(empty($file))
 			throw new Exception('View file must be provided');
 
@@ -38,7 +41,8 @@ class Core
 		return $filePath;
 	}
 
-	protected function loadHelper(string $file = '', string $path = '/helpers/') {
+	protected function loadHelper(string $file = '', string $path = '/helpers/')
+	{
 		$filePath = $this->validateFile($file, $path);
 		include $filePath;
 	}

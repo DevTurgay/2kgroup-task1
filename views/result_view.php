@@ -37,7 +37,7 @@
 				<td><?=$value['BetAmount']?></td>
 			</tr>
 			<?php endforeach; ?>
-			<?php if(!$count): ?>
+			<?php if (!$count): ?>
 				<tr><td class="t-center" colspan="5">No data found</td></tr>
 			<?php endif; ?>
 		</tbody>
